@@ -12,26 +12,6 @@ import torch.nn.functional as F
 CUDA_LAUNCH_BLOCKING=1
 
 class NGCF(nn.Module):
-    #     NGCF(
-    # (embedding_dict): ParameterDict(
-    #     (item_emb): Parameter containing: [torch.cuda.FloatTensor of size 40981x64 (GPU 0)]
-    #     (user_emb): Parameter containing: [torch.cuda.FloatTensor of size 29858x64 (GPU 0)]
-    # )
-    # (weight_dict): ParameterDict(
-    #     (W_gc_0): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_gc_0): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    #     (W_bi_0): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_bi_0): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    #     (W_gc_1): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_gc_1): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    #     (W_bi_1): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_bi_1): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    #     (W_gc_2): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_gc_2): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    #     (W_bi_2): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
-    #     (b_bi_2): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
-    # )
-    # )
     def __init__(self, n_user, n_item, norm_adj, args):
         super(NGCF, self).__init__()
         self.n_user = n_user
