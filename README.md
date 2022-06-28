@@ -9,8 +9,8 @@ The code has been run and tested under Python 3.8.13 and pytorch == 1.4.0
 
 
 ## Example to Run the Codes
-The instruction of commands has been clearly stated in the codes (see the parser function in NGCF/utility/parser.py).
-* Gowalla dataset
+The argument can be see in the parser function in NGCF/main.py).
+* Example with Gowalla dataset
 ```
 python main.py
 ```
