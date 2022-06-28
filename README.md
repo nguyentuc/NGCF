@@ -5,16 +5,13 @@ This is my PyTorch implementation for the paper:
 
 
 ## Environment Requirement
-The code has been run and tested under Python 3.8.13 and pytorch == 1.4.0
+The code has been run and tested under:
+Python 3.8.13
+pytorch == 1.4.0
 
 
 ## Example to Run the Codes
 The argument can be see in the parser function in NGCF/main.py).
-* Example with Gowalla dataset
 ```
 python main.py
-```
-
-```
-Best Iter=[38]@[32904.5]	recall=[0.15571	0.21793	0.26385	0.30103	0.33170], precision=[0.04763	0.03370	0.02744	0.02359	0.02088], hit=[0.53996	0.64559	0.70464	0.74546	0.77406], ndcg=[0.22752	0.26555	0.29044	0.30926	0.32406]
 ```
